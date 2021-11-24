@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fair-cli</id>
+    <version>0.2.3</version>
+    <title>FAIR Data Pipeline CLI</title>
+    <authors>Richard Reeve,Kristian Zarebski,Nathan Cummings,Dennis Reddyhoff,Ryan Field</authors>
+    <projectUrl>https://www.fairdatapipeline.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chtof/chocolatey-packages/automatic/numpy/numpy.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/FAIRDataPipeline/FAIR-CLI/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/FAIRDataPipeline/FAIR-CLI</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/FAIRDataPipeline/FAIR-CLI/issues</bugTrackerUrl>
+    <tags>fair-cli python FAIR data pipeline provenance</tags>
+    <description>Synchronization interface for the SCRC FAIR Data Pipeline registry</description>
+    <releaseNotes>https://github.com/numpy/numpy/releases</releaseNotes>
+  <dependencies>
+    <dependency id="python" version="3.9" />
+  </dependencies>
+  </metadata>  
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
