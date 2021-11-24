@@ -1,0 +1,19 @@
+name: FAIR Data Pipeline Chocolatey Packages
+on: [push]
+jobs:
+  fair-cli:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Choco pack
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: pack
+        working-directory: ./fair-cli
+
+      - name: Choco install test
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: install fair-cli -dv -s -y .
+        working-directory: ./fair-cli
