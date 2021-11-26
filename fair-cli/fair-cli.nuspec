@@ -16,7 +16,7 @@
     <description>Synchronization interface for the SCRC FAIR Data Pipeline registry</description>
     <releaseNotes>https://github.com/numpy/numpy/releases</releaseNotes>
   <dependencies>
-    <dependency id="python" version="3.9" />
+    <dependency id="python" version="3.7.0" />
   </dependencies>
   </metadata>  
   <files>
